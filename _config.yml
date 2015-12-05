@@ -64,6 +64,12 @@ pagination_dir: page
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
 theme: TKL
+plugins:
+- hexo-math
+
+archive: 1
+category: 1
+tag: 1
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
