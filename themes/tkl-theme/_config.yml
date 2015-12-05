@@ -1,0 +1,44 @@
+# config
+cover: /img/bg_img.jpg
+logo: /img/logo.png
+top_saying:
+- title: Keep Learning.
+- content: 一枚好奇心很强的码农和攻城狮。
+# bottom_saying: printf("Continue...\n");
+# Content
+excerpt_link: Read More
+
+rss: /atom.xml
+
+highlightjs: vs
+
+#Works
+#works:
+#- works_name: AAA
+#  works_url: /
+#- works_name: BBB
+#  works_url: /atom.xml
+
+#duoshuo name
+#duoshuo: duoshuo_name
+
+# Miscellaneous
+github: https://github.com/guohengkai
+
+#about  timeline
+timeline:
+- num: 1
+  word: 2015/12/05-Start
+#- num: 2
+#  word: 2014/11/29-XXX
+#- num: 3
+#  word: 2015/02/18-DDD
+- num: 2
+  word: More
+
+#Links
+#links:
+#- name: Kieran
+#  link: http://go.kieran.top/
+#- name: Name
+#  link: http://domain.com/
