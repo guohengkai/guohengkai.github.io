@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Guo Hengkai&#39;s Blog</title>
+  <title>基于RGB-D图像的hand pose最新文章回顾 | Guo Hengkai&#39;s Blog</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -84,7 +84,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -201,17 +201,12 @@
         <!-- // End height spacing helper -->
 
         <!-- ============================ END Hero Image =========================== -->
-      <!-- ============================ Content =========================== -->
-
+      
 <section id="intro">
     <div class="container">
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2016/01/01/hand-paper/">基于RGB-D图像的hand pose最新文章回顾</a></h3>
-                    <span>
-                        <span class="post-meta">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
       <time datetime="2016-01-01T06:43:31.000Z" itemprop="datePublished">
           2016-01-01
       </time>
@@ -224,74 +219,38 @@
     
     
 </span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        <p>当前在实验室的主要topic是RGB-D图的hand pose。这个topic在2015年开始爆发，从去年寥寥无几的几篇，到今年各种会议上超过十篇，performance提升得也很快。所以在2016年的第一天按照时间顺序整理一下自2014年起最新的hand pose文章。<br>
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2016/01/01/hand-paper/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
+                <h1>基于RGB-D图像的hand pose最新文章回顾</h1>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2015/12/06/hexo-blog/">利用hexo在GitHub上建立博客</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2015-12-06T03:04:36.000Z" itemprop="datePublished">
-          2015-12-06
-      </time>
-    
-    
-    | 
-    <a href='/tags/Hexo/'>Hexo</a>
-    
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        <p>闲着无聊在GitHub上建了个人博客<del>入了坑</del>，用于记录各种坑和各种搬砖心得。本博客使用的hexo版本是3.1.1，本机操作系统为Win 8.1。配置流程主要参考了<a href="http://www.jianshu.com/p/465830080ea9">这篇</a>和<a href="http://xinghao.me/2014/08/24/2014-08-24-blog_setup/">另一篇</a>博客。本文先概述一下配置流程，然后记录一下配置过程中遇到的各种坑和解决方法。<br>
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2015/12/06/hexo-blog/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<p>当前在实验室的主要topic是RGB-D图的hand pose。这个topic在2015年开始爆发，从去年寥寥无几的几篇，到今年各种会议上超过十篇，performance提升得也很快。所以在2016年的第一天按照时间顺序整理一下自2014年起最新的hand pose文章。<br><a id="more"></a></p>
+<h2 id="Latent_Regression_Forest:_Structured_Estimation_of_3D_Articulated_Hand_Posture_(CVPR_2014,_oral)">Latent Regression Forest: Structured Estimation of 3D Articulated Hand Posture (CVPR 2014, oral)</h2><h2 id="Realtime_and_Robust_Hand_Tracking_from_Depth_(CVPR_2014,_oral)">Realtime and Robust Hand Tracking from Depth (CVPR 2014, oral)</h2><h2 id="Real-Time_Continuous_Pose_Recovery_of_Human_Hands_Using_Convolutional_Networks_(TOG_2014)">Real-Time Continuous Pose Recovery of Human Hands Using Convolutional Networks (TOG 2014)</h2><h2 id="Accurate,_Robust,_and_Flexible_Real-time_Hand_Tracking_(CHI_2015)">Accurate, Robust, and Flexible Real-time Hand Tracking (CHI 2015)</h2><p>这是MSR的一篇文章，发在HCI的顶会。本文的主要贡献是提出了一个实用的手部跟踪系统，该系统具有如下特点：</p>
+<ul>
+<li><strong>Accurate：</strong><br>对于不同的手势均有准确的重建结果。</li>
+<li><strong>Robust：</strong><br>系统能从各种瞬时跟踪错误中恢复。</li>
+<li><strong>Flexible：</strong><br>这是该系统与其他系统最不同的地方。该系统只需要一个深度摄像头，<br>对于手的位置（最远在几米范围也能work）、方位等均没有特殊要求。</li>
+</ul>
+<p>该系统的流程并不复杂，主要思想是产生一系列候选手的图像，然后和实际图像进行比较，筛选、演化出最终的pose。<br>算法如下图所示，主要包括手部ROI提取、重新初始化（Reinitialization）和模型拟合三部分。<br><img src="/img/hand-paper-chi1-alg.png" alt="算法流程"></p>
+<p><strong>1. 手部ROI提取：</strong><br>首先利用传统方法来得到初始的框，比如detector或者上一帧的手的位置。然后利用RF分类器对该区域附近的像素进行手臂/手的二分类，<br>该分类器在生成的数据上进行训练。最后搜索邻域，找到包含手概率和最大的框。</p>
+<p><strong>2. 重新初始化：</strong><br>Reinitialization是算法最关键的一步，文中采用了两级RF的方法，第一级预测全局旋转所在的bin，第二级预测具体的pose，<br>这样的设计使得第二级中pose的variance大大减少。和之前基于RF的hand pose预测方法不同，二级的RF只是用于产生pose的分布，<br>在下一个阶段将利用该分布来产生一系列不同的hypothesis。该RF也在合成的数据上训练，好像现在基于合成数据的训练已经是主流的做法了。</p>
+<p><strong>3. 模型拟合：</strong><br>模型拟合采用的是经典的PSO（Particle Swarm Optimization）与基因算法相结合的方法。首先定义golden能量函数如下：<br>$$E^{Au}(Z<em>{roi}, R</em>{roi}) = sum<em>{ij}\rho(z</em>{ij} - r_{ij})$$<br>其中$\rho(e)=min(|e|, \tao)$为L1截断距离。</p>
+<h2 id="Hands_Deep_in_Deep_Learning_for_Hand_Pose_Estimation_(CVWW_2015)">Hands Deep in Deep Learning for Hand Pose Estimation (CVWW 2015)</h2><h2 id="Cascaded_Hand_Pose_Regression_(CVPR_2015)">Cascaded Hand Pose Regression (CVPR 2015)</h2><h2 id="Fast_and_Robust_Hand_Tracking_Using_Detection-Guided_Optimization_(CVPR_2015)">Fast and Robust Hand Tracking Using Detection-Guided Optimization (CVPR 2015)</h2><h2 id="First-Person_Pose_Recognition_using_Egocentric_Workspaces_(CVPR_2015)">First-Person Pose Recognition using Egocentric Workspaces (CVPR 2015)</h2><h2 id="Combining_Discriminative_and_Model_Based_Approaches_for_Hand_Pose_Estimaiton_(BMVC_2015,_oral)">Combining Discriminative and Model Based Approaches for Hand Pose Estimaiton (BMVC 2015, oral)</h2><h2 id="Rule_Of_Thumb:_Deep_Derotation_for_Improved_Fingertip_Detection_(BMVC_2015)">Rule Of Thumb: Deep Derotation for Improved Fingertip Detection (BMVC 2015)</h2><h2 id="Training_a_Feedback_Loop_for_Hand_Pose_Estimation_(ICCV_2015,_oral)">Training a Feedback Loop for Hand Pose Estimation (ICCV 2015, oral)</h2><h2 id="Opening_the_Black_Box:_Hierarchical_Sampling_Optimization_for_Estimation_Human_Hand_Pose_(ICCV_2015,_oral)">Opening the Black Box: Hierarchical Sampling Optimization for Estimation Human Hand Pose (ICCV 2015, oral)</h2><h2 id="Depth-based_Hand_Pose_Estimation:_Methods,_Data,_and_Challenges_(ICCV_2015)">Depth-based Hand Pose Estimation: Methods, Data, and Challenges (ICCV 2015)</h2><h2 id="3D_Hand_Pose_Estimation_Using_Randomized_Decision_Forest_with_Segmentation_Index_Points_(ICCV_2015)">3D Hand Pose Estimation Using Randomized Decision Forest with Segmentation Index Points (ICCV 2015)</h2><h2 id="A_Collaborative_Filtering_Approach_to_Real-Time_Hand_Pose_Estimation_(ICCV_2015)">A Collaborative Filtering Approach to Real-Time Hand Pose Estimation (ICCV 2015)</h2>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
-        
         <nav class="pagination" role="pagination">
-          
-          
-        </nav>
+    
+    
+    <a class="pull-right" href="/2015/12/06/hexo-blog/">
+        利用hexo在GitHub上建立博客 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo"></div>
     </div>
 </section>
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p></p>
-        </div>
-    </div>
-</section>
-<!-- ============================ END Content =========================== -->
+
 
       
 <!-- ============================ Footer =========================== -->
