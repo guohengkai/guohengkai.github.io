@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Archives: 2015/12 | Guo Hengkai&#39;s Blog</title>
+  <title>那些年踩过的OpenCV 2.4.X的坑 | Guo Hengkai&#39;s Blog</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -84,7 +84,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -204,37 +204,52 @@
 
         <!-- ============================ END Hero Image =========================== -->
       
-
-
-<section id="services">
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2015/12/06/hexo-blog/">利用hexo在GitHub上建立博客</a></h4>
-                            
-                            <p><time datetime="2015-12-06T03:04:36.000Z"><a href="/2015/12/06/hexo-blog/">2015-12-06</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2016-01-12T03:43:51.000Z" itemprop="datePublished">
+          2016-01-12
+      </time>
+    
+    
+    | 
+    <a href='/tags/Hexo/'>Hexo</a>
+    
+    
+</span>
+                <h1>那些年踩过的OpenCV 2.4.X的坑</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<p>(last updated: 2016.01.12)<br>由于前几天又被坑了一下，在这里记录一下OpenCV 2.4.X里的一些坑和比较隐藏的东西，以防以后又踩到。<br><a id="more"></a></p>
+<h2 id="VideoCapture">VideoCapture</h2><ol>
+<li>VideoCapture里的CV_CAP_PROP_POS_FRAMES和CV_CAP_PROP_FRAME_COUNT得到的数与实际利用read加上帧数统计的结果并不一致（偏小）。<br>所以建议不要利用set和get来实现视频回放或跳帧的功能。</li>
+</ol>
+<h2 id="Mat">Mat</h2><ol>
+<li>Mat在赋值的时候是采用引用计数的方式。复制的时候需要使用clone()。</li>
+<li>有多少人不知道Mat可以表示超过4个通道：CV_32FC(100)。</li>
+<li>CV_32FC3的元素类型为Vec3f，CV_8UC3的元素类型为Vec3i。</li>
+</ol>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p></p>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="pagination" role="pagination">
+    
+    
+    <a class="pull-right" href="/2016/01/01/hand-paper/">
+        基于RGB-D图像的hand pose最新文章回顾 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo"></div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 
