@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>Category: Research | Guo Hengkai&#39;s Blog</title>
+  <title>调用Caffe时Matlab与C++混用的坑 | Guo Hengkai&#39;s Blog</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -84,7 +84,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -204,37 +204,58 @@
 
         <!-- ============================ END Hero Image =========================== -->
       
-
-
-<section id="services">
+<section id="intro">
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
-                    
-                    
-                        
-                        
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
-                            
-                              <h4 class="title"><a href="/2016/01/01/hand-paper/">基于RGB-D图像的hand pose最新文章回顾</a></h4>
-                            
-                            <p><time datetime="2016-01-01T06:43:31.000Z"><a href="/2016/01/01/hand-paper/">2016-01-01</a></time></p>
-                        </div>
-                    
-                </div>
-            </div>    
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2016-01-21T16:02:35.000Z" itemprop="datePublished">
+          2016-01-22
+      </time>
+    
+    
+    | 
+    <a href='/tags/Caffe/'>Caffe</a>,
+    
+    <a href='/tags/Matlab/'>Matlab</a>,
+    
+    <a href='/tags/OpenCV/'>OpenCV</a>
+    
+    
+</span>
+                <h1>调用Caffe时Matlab与C++混用的坑</h1>
+            </div>
         </div>
-    </div>
-</section> 
+        <div class="col-md-8 col-md-offset-2">
+      		<p>因为C的<a href="http://www.hdfgroup.org/HDF5/doc/cpplus_RM/index.html" target="_blank" rel="external">HDF5接口</a>各种不给力，比如不支持increment插入等，因此经常利用Matlab来生成数据进行训练。在混用Matlab和C++调用Caffe时，有两点需要注意，否则会入坑。<br><a id="more"></a></p>
+<ol>
+<li>Matlab读取图片为RGB格式，而OpenCV为BGR格式。</li>
+<li>Matlab的矩阵为列优先，而OpenCV为行优先。</li>
+</ol>
+<p>为了使得C++的test代码易用，建议利用Matlab进行数据写入时对图像进行转置，即：<br><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">img = flip(<span class="built_in">permute</span>(img, <span class="matrix">[<span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>]</span>), <span class="number">3</span>);</span><br></pre></td></tr></table></figure></p>
+<p>等以后有空且有需求的时候试着用C++写一个HDF5的库，支持Matlab的h5create、h5write和h5read功能。【挖坑】</p>
 
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p></p>
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2016/01/22/linux-shell/" style="float: left;">
+        ← Linux里一些有用的shell命令总结
+    </a>
+    
+    
+    <a class="pull-right" href="/2016/01/12/opencv-hehe/">
+        那些年踩过的OpenCV 2.4.X的坑 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo"></div>
     </div>
 </section>
+
+
       
 <!-- ============================ Footer =========================== -->
 
