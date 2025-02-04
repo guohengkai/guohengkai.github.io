@@ -1,537 +1,430 @@
-<!DOCTYPE html>
-<!--[if lte IE 8 ]>
-<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
-<![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<!--
-***************  *      *     *
-      8          *    *       *
-      8          *  *         *
-      8          **           *
-      8          *  *         *
-      8          *    *       *
-      8          *      *     *
-      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
--->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
-<!--<![endif]-->
+<!DOCTYPE HTML>
+<html lang="en">
 
 <head>
-  <title>Guo Hengkai&#39;s Blog</title>
-  <!-- Meta data -->
-    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="generator" content="Guo Hengkai's Blog">
-    <meta name="author" content="Guo Hengkai">
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-
-    <!-- Favicon, (keep icon in root folder) -->
-    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
-
-    <link rel="alternate" href="/atom.xml" title="Guo Hengkai&#39;s Blog" type="application/atom+xml">
-    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
-	
-    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
-    
-    
-
-    <!-- Custom stylesheet, (add custom styles here, always load last) -->
-    <!-- Load our stylesheet for IE8 -->
-    <!--[if IE 8]>
-    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
-    <![endif]-->
-
-    <!-- Google Webfonts (Monserrat 400/700, Open Sans 400/600) -->
-    <link href='//fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='//fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-
-    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
-    <!--[if IE]>
-    <link href='http://fonts.useso.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.useso.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.useso.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.useso.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
-    <![endif]-->
-
-    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
-    <script src="/js/jquery-1.11.1.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
-
-    <!-- Load these in the <head> for quicker IE8+ load times -->
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="/js/html5shiv.min.js"></script>
-    <script src="/js/respond.min.js"></script>
-    <![endif]-->
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-  
-  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Hengkai Guo</title>
+    <meta name="author" content="Hengkai Guo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 
-<!--
-<body class="home-template">
--->
-<body id="index" class="lightnav animsition">
-
-      <!-- ============================ Off-canvas navigation =========================== -->
-
-    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
-        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
-            <img src="/img/close.png" alt="Close"/>
-        </div>
-        <!-- Lists in Slidebars -->
-        <ul class="sb-menu">
-            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
-            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
-            <!-- Dropdown Menu -->
-			 
-            
-        	<li>
-        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
-            	<ul class="sb-submenu">
-				  	
-				    <li><a href="/categories/Engineering/" class="animsition-link">Engineering<small>(4)</small></a></li>
-				    
-				    <li><a href="/categories/Other/" class="animsition-link">Other<small>(1)</small></a></li>
-				    
-				    <li><a href="/categories/Research/" class="animsition-link">Research<small>(1)</small></a></li>
-				    
-				</ul>
-        	</li>
-			
-            
-        </ul>
-        <!-- Lists in Slidebars -->
-        <ul class="sb-menu secondary">
-            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
-            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
-        </ul>
-    </div>
-    
-    <!-- ============================ END Off-canvas navigation =========================== -->
-
-    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
-
-    <div id="sb-site">
-        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
-
-        <!-- ============================ Header & Logo bar =========================== -->
-
-        <div id="navigation" class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <!-- Nav logo -->
-                    <div class="logo">
-                        <a href="/" title="Logo" class="animsition-link">
-                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
-                        </a>
-                    </div>
-                    <!-- // Nav logo -->
-                    <!-- Info-bar -->
-                    <nav>
-                        <ul class="nav">
-                            <li><a href="/" class="animsition-link">Guo Hengkai's Blog</a></li>
-                            <li class="nolink"><span>Always </span>Creative.</li>
-                            
-                            <li><a href="https://github.com/guohengkai" title="Github" target="_blank"><i class="icon-github"></i></a></li>
-                            
-                            
-                            
-                            
-                            
-                            <li class="nolink"><span>Welcome!</span></li>
-                        </ul>
-                    </nav>
-                    <!--// Info-bar -->
-                </div>
-                <!-- // .container -->
-                <div class="learnmore sb-toggle-right">More</div>
-                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar before"></span>
-                <span class="icon-bar main"></span>
-                <span class="icon-bar after"></span>
-                </button>
-            </div>
-            <!-- // .navbar-inner -->
-        </div>
-
-        <!-- ============================ Header & Logo bar =========================== -->
-
-        <!-- ============================ Hero Image =========================== -->
-
-        <section id="hero" class="scrollme">
-            <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                        <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                            <div>
-                            	
-                                <h2>Keep Learning.</h2>
-                                <p></p>
-				    			
-                                <h2></h2>
-                                <p>一枚好奇心很强的码农和攻城狮。</p>
-				    			
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- // .col-md-12 -->
-                </div>
-                <div class="herofade beige-dk"></div>
-            </div>
-        </section>
-
-        <!-- Height spacing helper -->
-        <div class="heightblock"></div>
-        <!-- // End height spacing helper -->
-
-        <!-- ============================ END Hero Image =========================== -->
-      <!-- ============================ Content =========================== -->
-
-<section id="intro">
-    <div class="container">
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2016/05/13/cpp-rvalue/">C++11中右值的传参及返回值优化</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2016-05-13T13:01:20.000Z" itemprop="datePublished">
-          2016-05-13
-      </time>
-    
-    
-    | 
-    <a href='/tags/C/'>C++</a>
-    
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        <p>自C++11引入右值概念之后，很多代码有了优化空间，但同时对于编译器在传参和返回值时的优化有了一些疑惑，于是写了点代码做了实验。<br>
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2016/05/13/cpp-rvalue/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2016/01/22/linux-shell/">Linux里有用的shell命令总结</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2016-01-21T16:13:05.000Z" itemprop="datePublished">
-          2016-01-22
-      </time>
-    
-    
-    | 
-    <a href='/tags/Linux/'>Linux</a>,
-    
-    <a href='/tags/Shell/'>Shell</a>
-    
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        <p>最近简单地翻了一本书叫<a href="http://book.douban.com/subject/5974281/">《Linux Shell Scripting Cookbook》</a>，有很多有用的东西，在这里简单记录备忘一下，其中略过一些比较熟或者很少用的命令。<br>
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2016/01/22/linux-shell/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2016/01/22/caffe-mat-c/">调用Caffe时Matlab与C++混用的坑</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2016-01-21T16:02:35.000Z" itemprop="datePublished">
-          2016-01-22
-      </time>
-    
-    
-    | 
-    <a href='/tags/Caffe/'>Caffe</a>,
-    
-    <a href='/tags/Matlab/'>Matlab</a>,
-    
-    <a href='/tags/OpenCV/'>OpenCV</a>
-    
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        <p>因为C的<a href="http://www.hdfgroup.org/HDF5/doc/cpplus_RM/index.html">HDF5接口</a>各种不给力，比如不支持increment插入等，因此经常利用Matlab来生成数据进行训练。在混用Matlab和C++调用Caffe时，有两点需要注意，否则会入坑。<br>
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2016/01/22/caffe-mat-c/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2016/01/12/opencv-hehe/">那些年踩过的OpenCV 2.4.X的坑</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2016-01-12T03:43:51.000Z" itemprop="datePublished">
-          2016-01-12
-      </time>
-    
-    
-    | 
-    <a href='/tags/OpenCV/'>OpenCV</a>
-    
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        <p>(last updated: 2016.01.12)<br>由于前几天又被坑了一下，在这里记录一下OpenCV 2.4.X里的一些坑和比较隐藏的东西，以防以后又踩到。<br>
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2016/01/12/opencv-hehe/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2016/01/01/hand-paper/">基于RGB-D图像的hand pose最新文章回顾</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2016-01-01T06:43:31.000Z" itemprop="datePublished">
-          2016-01-01
-      </time>
-    
-    
-    | 
-    <a href='/tags/Hand-Pose/'>Hand Pose</a>,
-    
-    <a href='/tags/Paper-Reading/'>Paper Reading</a>
-    
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        <p>当前在实验室的主要topic是RGB-D图的hand pose。这个topic在2015年开始爆发，从去年寥寥无几的几篇，到今年各种会议上超过十篇，performance提升得也很快。所以在2016年的第一天按照时间顺序整理一下自2014年起最新的hand pose文章。为了简单起见<del>且配置MathJax失败</del>，本文尽量用通俗的语言来描述工作，不出现数学公式。<br>
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2016/01/01/hand-paper/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2015/12/06/hexo-blog/">利用hexo在GitHub上建立博客</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2015-12-06T03:04:36.000Z" itemprop="datePublished">
-          2015-12-06
-      </time>
-    
-    
-    | 
-    <a href='/tags/Hexo/'>Hexo</a>
-    
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        <p>闲着无聊在GitHub上建了个人博客<del>入了坑</del>，用于记录各种坑和各种搬砖心得。本博客使用的hexo版本是3.1.1，本机操作系统为Win 8.1。配置流程主要参考了<a href="http://www.jianshu.com/p/465830080ea9">这篇</a>和<a href="http://xinghao.me/2014/08/24/2014-08-24-blog_setup/">另一篇</a>博客。本文先概述一下配置流程，然后记录一下配置过程中遇到的各种坑和解决方法。<br>
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2015/12/06/hexo-blog/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <nav class="pagination" role="pagination">
-          
-          
-        </nav>
-    </div>
-</section>
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p></p>
-        </div>
-    </div>
-</section>
-<!-- ============================ END Content =========================== -->
-
-      
-<!-- ============================ Footer =========================== -->
-
-<footer>
-    <div class="container">
-            <div class="copy">
-                <p>
-                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By Guo Hengkai. All Rights Reserved.
-                </p>
-                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
-            </div>
-            <div class="social">
-                <ul>
-                    
-                    <li><a href="https://github.com/guohengkai" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
-                    
-                    
-                    
-                    
-                    
-                </ul>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-</footer>
-
-<!-- ============================ END Footer =========================== -->
-      <!-- Load our scripts -->
-        
-<!-- Resizable 'on-demand' full-height hero -->
-<script type="text/javascript">
-    
-    var resizeHero = function () {
-        var hero = $(".cover,.heightblock"),
-            window1 = $(window);
-        hero.css({
-            "height": window1.height()
-        });
-    };
-    
-    resizeHero();
-    
-    $(window).resize(function () {
-        resizeHero();
-    });
-</script>
-<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
-<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
-<script src="/js/scripts.js"></script><!-- Theme scripts -->
-
-<!-- Initiate flexslider plugin -->
-<script type="text/javascript">
-    $(document).ready(function($) {
-      $('.flexslider').flexslider({
-        animation: "fade",
-        prevText: "",
-        nextText: "",
-        directionNav: true
-      });
-    });
-</script>
-
-<!-- mathjax config similar to math.stackexchange -->
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      }
-    });
-</script>
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-
-<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+<body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr style="padding:0px">
+                <td style="padding:0px">
+                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr style="padding:0px">
+                                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                                    <p class="name" style="text-align: center;">
+                                        Hengkai Guo
+                                    </p>
+                                    <p>I currently lead a team at <a href="https://www.bytedance.com/">ByteDance</a>, focusing on the development of advanced 3D vision and augmented reality (AR) technologies. In my role, I have sprearheaded 3D vision projects, aimed at enhancing AR interaction, 3D editing, and content creation. Prior to joining ByteDance, I completed both my bachelor's and master's degrees from <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a>. Additionally, I have enriched my experience with internships at <a href="https://about.google/">Google</a>, <a href="https://www.hulu.com/">Hulu</a>, <a href="https://www.sensetime.com/">Sensetime</a>, and <a href="https://www.microsoft.com/">Microsoft</a>.
+                                    </p>
+                                    <p style="text-align:center">
+                                        <a href="mailto:guohengkaighk@gmail.com">Email</a> &nbsp;/&nbsp;
+                                        <a href="https://scholar.google.com/citations?user=6_cOe58AAAAJ&hl=en">Scholar</a> &nbsp;/&nbsp;
+                                        <a href="https://github.com/guohengkai/">Github</a>
+                                    </p>
+                                </td>
+                                <td style="padding:2.5%;width:17%;max-width:17%">
+                                    <a href="images/ghk.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 20%;" alt="profile photo" src="images/ghk.jpg" class="hoverZoomLink"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:16px;width:100%;vertical-align:middle">
+                                    <h2>Research</h2>
+                                    <p>
+                                        My primary interest lies in 3D vision and its practical applications, encompassing areas including 3D localization, perception, reconstruction, understanding, and generation.
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tbody>
+                            <tr>
+                                <td style="padding:16px;width:30%;vertical-align:middle">
+                                    <img style="width:100%" src="images/vda.gif" alt="dise">
+                                </td>
+                                <td style="padding:8px;width:70%;vertical-align:middle">
+                                    <a href="https://videodepthanything.github.io/">
+                                        <span class="papertitle">Video Depth Anything: Consistent Depth Estimation for Super-Long Videos</span>
+                                    </a>
+                                    <br>
+                                    Sili Chen,
+                                    <strong>Hengkai Guo</strong>,
+                                    Shengnan Zhu,
+                                    Feihu Zhang,
+                                    <a href="http://speedinghzl.github.io/">Zilong Huang</a>,
+                                    <a href="https://scholar.google.com.sg/citations?user=Q8iay0gAAAAJ&hl=en">Jiashi Feng</a>,
+                                    <a href="https://bingykang.github.io/">Bingyi Kang</a>
+                                    <br>
+                                    <em>arXiv</em>, 2025
+                                    <br>
+                                    <a href="https://videodepthanything.github.io/">project page</a>
+                                    /
+                                    <a href="https://arxiv.org/abs/2501.12375">arXiv</a>
+                                    <p></p>
+                                    <p>
+                                        An accurate, consistent, efficient, and generalizable video depth estimator, capable of supporting videos of any length.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:4px;width:30%;vertical-align:middle">
+                                    <img style="width:100%" src="images/monoplane.png" alt="dise">
+                                </td>
+                                <td style="padding:8px;width:70%;vertical-align:middle">
+                                    <a href="https://github.com/thuzhaowang/MonoPlane">
+                                        <span class="papertitle">MonoPlane: Exploiting Monocular Geometric Cues for Generalizable 3D Plane Reconstruction
+                                        </span>
+                                    </a>
+                                    <br>
+                                    <a href="https://thuzhaowang.github.io/">Wang Zhao</a>,
+                                    <a href="https://scholar.google.com/citations?user=NSeLtc0AAAAJ&hl=en">Jiachen Liu</a>,
+                                    Sheng Zhang,
+                                    <a href="https://liy1shu.github.io/">Yishu Li</a>,
+                                    Sili Chen,
+                                    <a href="https://faculty.ist.psu.edu/suh972/">Sharon X Huang</a>,
+                                    <a href="https://yongjinliu.github.io/">Yong-Jin Liu</a>,
+                                    <strong>Hengkai Guo</strong>
+                                    <br>
+                                    <em>IROS</em>, 2024 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                                    <br>
+                                    <a href="https://github.com/thuzhaowang/MonoPlane">code (Coming soon)</a>
+                                    /
+                                    <a href="https://arxiv.org/abs/2411.01226">arXiv</a>
+                                    <p></p>
+                                    <p>
+                                        Leverage pretrained depth and normal models to facilitate zero-shot monocular plane reconstruction.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:16px;width:30%;vertical-align:middle">
+                                    <img style="width:100%" src="images/lazyloc.png" alt="dise">
+                                </td>
+                                <td style="padding:8px;width:70%;vertical-align:middle">
+                                    <a href="https://arxiv.org/abs/2307.09981">
+                                        <span class="papertitle">Lazy Visual Localization via Motion Averaging</span>
+                                    </a>
+                                    <br>
+                                    <a href="https://siyandong.github.io/">Siyan Dong</a>*,
+                                    <a href="http://b1ueber2y.me/">Shaohui Liu</a>*,
+                                    <strong>Hengkai Guo</strong>,
+                                    <a href="https://baoquanchen.info/">Baoquan Chen</a>,
+                                    <a href="https://people.inf.ethz.ch/marc.pollefeys/">Marc Pollefeys</a>
+                                    <br>
+                                    <em>arXiv</em>, 2024
+                                    <br>
+                                    <a href="https://arxiv.org/abs/2307.09981">arXiv</a>
+                                    <p></p>
+                                    <p>
+                                        Integrate motion averaging into visual localization to eliminate the need for pre-built 3D maps.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:4px;width:30%;vertical-align:middle">
+                                    <img style="width:100%" src="images/particlesfm.gif" alt="dise">
+                                </td>
+                                <td style="padding:8px;width:70%;vertical-align:middle">
+                                    <a href="http://b1ueber2y.me/projects/ParticleSfM/index.html">
+                                        <span class="papertitle">ParticleSfM: Exploiting Dense Point Trajectories for Localizing Moving Cameras</span>
+                                    </a>
+                                    <br>
+                                    <a href="https://thuzhaowang.github.io/">Wang Zhao</a>,
+                                    <a href="http://b1ueber2y.me/">Shaohui Liu</a>,
+                                    <strong>Hengkai Guo</strong>,
+                                    <a href="https://engineering.tamu.edu/cse/profiles/Wang-Wenping.html">Wenping Wang</a>,
+                                    <a href="https://yongjinliu.github.io/">Yong-Jin Liu</a>
+                                    <br>
+                                    <em>ECCV</em>, 2022
+                                    <br>
+                                    <a href="http://b1ueber2y.me/projects/ParticleSfM/index.html">project page</a>
+                                    /
+                                    <a href="https://arxiv.org/abs/2207.09137">arXiv</a>
+                                    /
+                                    <a href="https://github.com/bytedance/particle-sfm">code</a>
+                                    <p></p>
+                                    <p>
+                                        A video structure-from-motion system with dense point trajectories that generalizes well to in-the-wild sequences with dynamic motion.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:4px;width:30%;vertical-align:middle">
+                                    <img style="width:100%" src="images/idnsolver.gif" alt="dise">
+                                </td>
+                                <td style="padding:8px;width:70%;vertical-align:middle">
+                                    <a href="http://b1ueber2y.me/projects/IDN-Solver/">
+                                        <span class="papertitle">A Confidence-based Iterative Solver of Depths and Surface Normals for Deep Multi-view Stereo</span>
+                                    </a>
+                                    <br>
+                                    <a href="https://thuzhaowang.github.io/">Wang Zhao</a>*,
+                                    <a href="http://b1ueber2y.me/">Shaohui Liu</a>*,
+                                    <a href="https://weiyithu.github.io/">Yi Wei</a>,
+                                    <strong>Hengkai Guo</strong>,
+                                    <a href="https://yongjinliu.github.io/">Yong-Jin Liu</a>
+                                    <br>
+                                    <em>ICCV</em>, 2021
+                                    <br>
+                                    <a href="http://b1ueber2y.me/projects/IDN-Solver/">project page</a>
+                                    /
+                                    <a href="https://arxiv.org/abs/2201.07609v1">arXiv</a>
+                                    /
+                                    <a href="https://github.com/thuzhaowang/idn-solver">code</a>
+                                    <p></p>
+                                    <p>
+                                        A differentiable solver for multi-view stereo that iteratively solves for per-view depth and normal map based on the locally planar assumption.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:16px;width:30%;vertical-align:middle">
+                                    <img style="width:100%" src="images/ifm.png" alt="dise">
+                                </td>
+                                <td style="padding:8px;width:70%;vertical-align:middle">
+                                    <a href="https://ieeexplore.ieee.org/document/9564031">
+                                        <span class="papertitle">Iterative Feature Matching for Self-supervised Indoor Depth Estimation</span>
+                                    </a>
+                                    <br>
+                                    <a href="https://weiyithu.github.io/">Yi Wei</a>,
+                                    <strong>Hengkai Guo</strong>,
+                                    <a href="http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/">Jiwen Lu</a>,
+                                    <a href="https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en&authuser=1">Jie Zhou</a>
+                                    <br>
+                                    <em>TCSVT</em>, 2021
+                                    <br>
+                                    <a href="https://ieeexplore.ieee.org/document/9564031">paper</a>
+                                    <p></p>
+                                    <p>
+                                        A self-supervised depth estimation framework designed for low-texture indoor scenes, which operates without PoseNet by utilizing iterative feature matching.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:4px;width:30%;vertical-align:middle">
+                                    <img style="width:100%" src="images/gpo.png" alt="dise">
+                                </td>
+                                <td style="padding:8px;width:70%;vertical-align:middle">
+                                    <a href="https://arxiv.org/abs/2004.12051">
+                                        <span class="papertitle">GPO: Global Plane Optimization for Fast and Accurate Monocular SLAM Initialization</span>
+                                    </a>
+                                    <br>
+                                    Sicong Du*,
+                                    <strong>Hengkai Guo</strong>*,
+                                    <a href="https://scholar.google.com/citations?user=hMYxUpQAAAAJ&hl=en">Yao Chen</a>,
+                                    Yilun Lin,
+                                    Xiangbing Meng,
+                                    Linfu Wen,
+                                    <a href="https://people.ucas.ac.cn/~wangfeiyue?language=en">Fei-Yue Wang</a>
+                                    <br>
+                                    <em>ICRA</em>, 2020
+                                    <br>
+                                    <a href="https://arxiv.org/abs/2004.12051">arXiv</a>
+                                    <p></p>
+                                    <p>
+                                        A monocular initialization method for SLAM using multi-frame planar homographies.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:4px;width:30%;vertical-align:middle">
+                                    <img style="width:100%" src="images/geopretrain.png" alt="dise">
+                                </td>
+                                <td style="padding:8px;width:70%;vertical-align:middle">
+                                    <a href="https://github.com/HKUST-Aerial-Robotics/GeometricPretraining">
+                                        <span class="papertitle">Geometric Pretraining for Monocular Depth Estimation</span>
+                                        <br>
+                                        <a href="https://wang-kx.github.io/">Kaixuan Wang</a>,
+                                        <a href="https://scholar.google.com/citations?user=hMYxUpQAAAAJ&hl=en">Yao Chen</a>,
+                                        <strong>Hengkai Guo</strong>,
+                                        Linfu Wen,
+                                        <a href="https://uav.hkust.edu.hk/group/">Shaojie Shen</a>
+                                        <br>
+                                        <em>ICRA</em>, 2020
+                                        <br>
+                                        <a href="https://ieeexplore.ieee.org/document/9196847">paper</a>
+                                        /
+                                        <a href="https://github.com/HKUST-Aerial-Robotics/GeometricPretraining">code</a>
+                                        <p></p>
+                                        <p>
+                                            Use self-supervised flow pretraining task to improve monocular depth estimation.
+                                        </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:4px;width:30%;vertical-align:middle">
+                                    <img style="width:100%" src="images/poseren.png" alt="dise">
+                                </td>
+                                <td style="padding:8px;width:70%;vertical-align:middle">
+                                    <a href="https://arxiv.org/abs/1708.03416">
+                                        <span class="papertitle">Pose Guided Structured Region Ensemble Network for Cascaded Hand Pose Estimation</span>
+                                    </a>
+                                    <br>
+                                    <a href="https://www.xinghaochen.xyz/">Xinghao Chen</a>,
+                                    <a href="http://web.ee.tsinghua.edu.cn/wangguijin/en/index.htm">Guijin Wang</a>,
+                                    <strong>Hengkai Guo</strong>,
+                                    Cairong Zhang
+                                    <br>
+                                    <em>Neurocomputing</em>, 2019
+                                    <br>
+                                    <a href="https://arxiv.org/abs/1708.03416">arXiv</a>
+                                    /
+                                    <a href="https://github.com/xinghaochen/Pose-REN">code</a>
+                                    <p></p>
+                                    <p>
+                                        Enhance RGB-D-based 3D hand pose estimation by fusing features from initial pose guidance, estimated through a region ensemble network.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:4px;width:30%;vertical-align:middle">
+                                    <img style="width:100%" src="images/bihand.png" alt="dise">
+                                </td>
+                                <td style="padding:8px;width:70%;vertical-align:middle">
+                                    <a href="https://arxiv.org/abs/1804.10160">
+                                        <span class="papertitle">Two-Stream Binocular Network: Accurate Near Field Finger Detection Based On Binocular Images</span>
+                                    </a>
+                                    <br>
+                                    <a href="https://weiyithu.github.io/">Yi Wei</a>,
+                                    <a href="http://web.ee.tsinghua.edu.cn/wangguijin/en/index.htm">Guijin Wang</a>,
+                                    Cairong Zhang,
+                                    <strong>Hengkai Guo</strong>,
+                                    <a href="https://www.xinghaochen.xyz/">Xinghao Chen</a>,
+                                    <a href="https://www.ee.tsinghua.edu.cn/en/info/1067/1292.htm">Huazhong Yang</a>
+                                    <br>
+                                    <em>VCIP</em>, 2017 &nbsp <font color="red"><strong>(Best Student Paper Award)</strong></font>
+                                    <br>
+                                    <a href="https://arxiv.org/abs/1804.10160">arXiv</a>
+                                    /
+                                    <a href="https://sites.google.com/view/thuhand17">dataset</a>
+                                    <p></p>
+                                    <p>
+                                        A two-stream model designed to regress the 3D positions of fingertips from binocular images.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:8px;width:30%;vertical-align:middle">
+                                    <img style="width:100%" src="images/ren.gif" alt="dise">
+                                </td>
+                                <td style="padding:8px;width:70%;vertical-align:middle">
+                                    <a href="https://github.com/guohengkai/region-ensemble-network">
+                                        <span class="papertitle">Region Ensemble Network: Improving Convolutional Network for Hand Pose Estimation</span>
+                                    </a>
+                                    <br>
+                                    <strong>Hengkai Guo</strong>,
+                                    <a href="http://web.ee.tsinghua.edu.cn/wangguijin/en/index.htm">Guijin Wang</a>,
+                                    <a href="https://www.xinghaochen.xyz/">Xinghao Chen</a>,
+                                    Cairong Zhang,
+                                    <a href="https://www.ee.tsinghua.edu.cn/en/info/1068/1298.htm">Fei Qiao</a>,
+                                    <a href="https://www.ee.tsinghua.edu.cn/en/info/1067/1292.htm">Huazhong Yang</a>
+                                    <br>
+                                    <em>ICIP</em>, 2017
+                                    <br>
+                                    <a href="https://arxiv.org/abs/1702.02447">arXiv</a>
+                                    /
+                                    <a href="https://github.com/guohengkai/region-ensemble-network">code</a>
+                                    <p></p>
+                                    <p>
+                                        A state-of-the-art RGB-D-based 3D hand pose model that utilizes a convolutional network and regional feature ensemble.
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding:4px;width:30%;vertical-align:middle">
+                                    <img style="width:100%" src="images/mfarnn.png" alt="dise">
+                                </td>
+                                <td style="padding:8px;width:70%;vertical-align:middle">
+                                    <a href="https://arxiv.org/abs/1708.03278">
+                                        <span class="papertitle">Motion Feature Augmented Recurrent Neural Network for Skeleton-based Dynamic Hand Gesture Recognition</span>
+                                    </a>
+                                    <br>
+                                    <a href="https://www.xinghaochen.xyz/">Xinghao Chen</a>,
+                                    <strong>Hengkai Guo</strong>,
+                                    <a href="http://web.ee.tsinghua.edu.cn/wangguijin/en/index.htm">Guijin Wang</a>,
+                                    Cairong Zhang,
+                                    <a href="https://www.ee.tsinghua.edu.cn/en/info/1064/1272.htm">Li Zhang</a>
+                                    <br>
+                                    <em>ICIP</em>, 2017
+                                    <br>
+                                    <a href="https://arxiv.org/abs/1708.03278">arXiv</a>
+                                    <p></p>
+                                    <p>
+                                        Use a recurrent neural network with augmented motion features to estimate skeleton-based dynamic hand gesture.
+                                    </p>
+                                </td>
+                            </tr>
+                            <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h2>Miscellanea</h2>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+                                            <div class="colored-box" style="background-color: #fcb97d;">
+                                                <h2>Competitions</h2>
+                                            </div>
+                                        </td>
+                                        <td style="padding:8px;width:80%;vertical-align:middle">
+                                            <a href="https://www.objects365.org/workshop2019.html">Detection In the Wild Challenge in CVPR 2019</a>: <font color="red"><strong>2nd for Object365 Full Track</strong></font>
+                                            <br>
+                                            <a href="https://openaccess.thecvf.com/ECCV2018_workshops/ECCV2018_W9">PoseTrack Challenge in ECCV 2018</a>: <font color="red"><strong>2nd for human pose tracking without extra datasets</strong></font>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+                                            <div class="colored-box" style="background-color: #aaba9e;">
+                                                <h2>Honors and Awards</h2>
+                                            </div>
+                                        </td>
+                                        <td style="padding:8px;width:80%;vertical-align:center">
+                                            Intel Scholarship, 2016 <font color="red"><strong>(5 people in Tsinghua University)</strong></font>
+                                            <br>
+                                            Guanghua Scholarship, 2015
+                                            <br>
+                                            <a href="https://www.tsinghua.edu.cn/info/1173/18354.htm">Excellent Graduate in Tsinghua University, 2014</a>
+                                            <br>
+                                            <a href="https://www.tuef.tsinghua.edu.cn/info/1042/2323.htm">Nanxiang Jiang Scholarship, 2013</a>
+                                            <font color="red"><strong>(Top scholarship, 19 people in Tsinghua University)</strong></font>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                                <tbody>
+                                    <tr>
+                                        <td style="padding:0px">
+                                            <br>
+                                            <p style="text-align:center;font-size:small;">
+                                                &copy; Hengkai Guo | Last updated: Feb 2025</a>
+                                            </p>
+                                            <p style="text-align:center;font-size:small;">
+                                                Design and source code from <a style="font-size:small;" href="https://jonbarron.info">Jon Barron's website</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                </td>
+            </tr>
+    </table>
 </body>
+
 </html>
